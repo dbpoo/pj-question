@@ -1,6 +1,8 @@
 <template>
   <div class="home">
-    
+    <div class="bg"></div>
+    <img alt="Vue logo" src="../assets/logo.png" />
+    <HelloWorld msg="Welcome to Your Vue.js App" />
   </div>
 </template>
 
@@ -9,7 +11,7 @@
 // import HelloWorld from '@/components/HelloWorld.vue';
 
 export default {
-  name: 'home',
+  name: "home"
   // components: {
   //   HelloWorld,
   // },
@@ -17,10 +19,9 @@ export default {
 </script>
 
 <style lang="less" scoped>
-  .home{
-    width:750px;
-    height:100px;
-    background-color: #ff0000;
-  }
+.bg {
+  width: 750px;
+  height: 100px;
+  background-color: #ff0000;
+}
 </style>
-
