@@ -1,15 +1,14 @@
 <template>
   <div class="step">
-    <h2 :class="`h2_${q}`">Step1</h2>
-    <p :class="`p_${q}`"></p>
+    <h2>{{ curArr.tit }}</h2>
+    <p><img :src="curArr.src" alt="" /></p>
     <ul>
       <li
-        v-for="(item, index) in seletArr"
+        v-for="(item, index) in curArr.que"
         :key="index"
-        @click="select(item)"
-        :class="`li${q}_${index}`"
+        @click="select(item.key)"
       >
-        {{ item }}
+        {{ `${item.key}.${item.con}` }}
       </li>
     </ul>
   </div>
@@ -23,7 +22,97 @@ export default {
   data() {
     return {
       q: 1,
-      seletArr: ["A", "B", "C", "D"]
+      curArr: [],
+      itemArr: [
+        {
+          tit: "1、梁波同志是在什么时间牺牲的?",
+          src: require("../assets/s1_1.jpg"),
+          que: [
+            {
+              key: "A",
+              con: "1947年9月"
+            },
+            {
+              key: "B",
+              con: "1948年9月"
+            },
+            {
+              key: "C",
+              con: "1949年9月"
+            },
+            {
+              key: "D",
+              con: "1947年8月"
+            }
+          ]
+        },
+        {
+          tit: "1、救命松救了谁的命?",
+          src: require("../assets/s1_2.jpg"),
+          que: [
+            {
+              key: "A",
+              con: "聂荣臻"
+            },
+            {
+              key: "B",
+              con: "纪亭榭"
+            },
+            {
+              key: "C",
+              con: "张友恒"
+            },
+            {
+              key: "D",
+              con: "梁波"
+            }
+          ]
+        },
+        {
+          tit: "1、梁波同志是平西站的第几任站长？",
+          src: require("../assets/s1_3.jpg"),
+          que: [
+            {
+              key: "A",
+              con: "第三任"
+            },
+            {
+              key: "B",
+              con: "第四任"
+            },
+            {
+              key: "C",
+              con: "第五任"
+            },
+            {
+              key: "D",
+              con: "第六任"
+            }
+          ]
+        },
+        {
+          tit: "1、请选出与苏静同志事迹最吻合的词语。 ",
+          src: require("../assets/s1_4.jpg"),
+          que: [
+            {
+              key: "A",
+              con: "爱党、敬业、奉献"
+            },
+            {
+              key: "B",
+              con: "隐忍、奉献、守纪"
+            },
+            {
+              key: "C",
+              con: "机智、大局、豪情 "
+            },
+            {
+              key: "D",
+              con: "拥护党、维护党、服务党"
+            }
+          ]
+        }
+      ]
     };
   },
   methods: {
@@ -36,6 +125,7 @@ export default {
   },
   mounted() {
     this.q = storage.get("q");
+    this.curArr = this.itemArr[this.q - 1];
   }
 };
 </script>
@@ -44,16 +134,37 @@ export default {
 .step {
   width: 750px;
   height: 100%;
-  background: url("../assets/bg.jpg") repeat center 0;
-  background-size: 750px 1333px;
-  ul li {
-    height: 100px;
-    background-color: #ff0000;
-    margin-bottom: 10px;
-    color: #fff;
+  h2 {
+    padding: 120px 30px 120px 30px;
+    font-size: 36px;
+  }
+  p {
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding-bottom: 80px;
+    img {
+      width: 588px;
+      height: 400px;
+      border-radius: 20px;
+      border: 20px solid rgba(221, 199, 161, 0.5);
+    }
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    li {
+      width: 600px;
+      height: 81px;
+      background: url("../assets/btnbg.png") no-repeat 0 0;
+      background-size: 600px 81px;
+      margin-bottom: 15px;
+      color: #ede0c9;
+      display: flex;
+      font-weight: bold;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }
 </style>

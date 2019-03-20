@@ -6,6 +6,7 @@
       <li>第二题：{{ step2 }}</li>
       <li>第三题：{{ step3 }}</li>
     </ul>
+    <div class="end-tips"></div>
   </div>
 </template>
 
@@ -45,7 +46,16 @@ export default {
 .end-tit {
   width: 750px;
   height: 345px;
-  background: url("../assets/end_tit.png") repeat center 0;
+  background: url("../assets/end_tit.png") no-repeat 0 0;
   background-size: contain;
+}
+.end-tips {
+  width: 750px;
+  height: 81px;
+  background: url("../assets/end_tips.png") no-repeat 0 0;
+  background-size: contain;
+  position: absolute;
+  bottom: 5%;
+  left: 0;
 }
 </style>

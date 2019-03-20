@@ -40,6 +40,8 @@ export default {
   width: 100%;
   top: 0;
   bottom: 0;
+  background: url("assets/bg.jpg") repeat center 0;
+  background-size: 750px 1333px;
 }
 
 .slide-right-enter-active,
