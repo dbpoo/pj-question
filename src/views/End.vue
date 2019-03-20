@@ -1,10 +1,10 @@
 <template>
   <div class="step">
-    <h2>结果如下</h2>
+    <div class="end-tit"></div>
     <ul>
-      <li>{{ step1 }}</li>
-      <li>{{ step2 }}</li>
-      <li>{{ step3 }}</li>
+      <li>第一题：{{ step1 }}</li>
+      <li>第二题：{{ step2 }}</li>
+      <li>第三题：{{ step3 }}</li>
     </ul>
   </div>
 </template>
@@ -36,5 +36,16 @@ export default {
   height: 100%;
   background: url("../assets/end.jpg") repeat center 0;
   background-size: 750px 1333px;
+  padding-top: 380px;
+  ul li {
+    font-size: 42px;
+    margin-bottom: 10px;
+  }
+}
+.end-tit {
+  width: 750px;
+  height: 345px;
+  background: url("../assets/end_tit.png") repeat center 0;
+  background-size: contain;
 }
 </style>

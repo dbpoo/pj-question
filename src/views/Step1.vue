@@ -1,8 +1,14 @@
 <template>
   <div class="step">
-    <h2>Step1</h2>
+    <h2 :class="`h2_${q}`">Step1</h2>
+    <p :class="`p_${q}`"></p>
     <ul>
-      <li v-for="(item, index) in seletArr" :key="index" @click="select(item)">
+      <li
+        v-for="(item, index) in seletArr"
+        :key="index"
+        @click="select(item)"
+        :class="`li${q}_${index}`"
+      >
         {{ item }}
       </li>
     </ul>
@@ -16,17 +22,20 @@ export default {
   name: "Step1",
   data() {
     return {
+      q: 1,
       seletArr: ["A", "B", "C", "D"]
     };
   },
   methods: {
     select(item) {
-      const q = storage.get("q");
-      storage.set("step" + q + "_1", item);
+      storage.set("step" + this.q + "_1", item);
       this.$router.push({
         path: "/step2"
       });
     }
+  },
+  mounted() {
+    this.q = storage.get("q");
   }
 };
 </script>
