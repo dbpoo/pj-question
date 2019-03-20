@@ -14,27 +14,42 @@ export default new Router({
   routes: [
     {
       path: "/",
-      name: "home",
+      name: "q1",
+      meta: {
+        index: 0
+      },
       component: Home
     },
     {
       path: "/step1",
       name: "step1",
+      meta: {
+        index: 1
+      },
       component: Step1
     },
     {
       path: "/step2",
       name: "step2",
+      meta: {
+        index: 3
+      },
       component: Step2
     },
     {
       path: "/step3",
       name: "step3",
+      meta: {
+        index: 4
+      },
       component: Step3
     },
     {
       path: "/end",
       name: "end",
+      meta: {
+        index: 5
+      },
       component: End
     }
   ]
