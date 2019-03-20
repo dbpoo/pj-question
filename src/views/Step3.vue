@@ -25,90 +25,90 @@ export default {
       curArr: [],
       itemArr: [
         {
-          tit: "1、梁波同志是在什么时间牺牲的?",
-          src: require("../assets/s3_1.jpg"),
+          tit: "3、请选出与梁波同志事迹最吻合的词语。",
+          src: require("../assets/s1_3.jpg"),
           que: [
             {
               key: "A",
-              con: "1947年9月"
+              con: "爱党、敬业、奉献"
             },
             {
               key: "B",
-              con: "1947年9月"
+              con: "隐忍、奉献、守纪"
             },
             {
               key: "C",
-              con: "1947年9月"
+              con: "机智、大局、豪情 "
             },
             {
               key: "D",
-              con: "1947年9月"
+              con: "拥护党、维护党、服务党"
             }
           ]
         },
         {
-          tit: "2、梁波同志是在什么时间牺牲的?",
-          src: require("../assets/s3_2.jpg"),
+          tit: "3、救命松的故事告诉我们，谁就是“救命松”。",
+          src: require("../assets/s2_3.jpg"),
           que: [
             {
               key: "A",
-              con: "1947年9月"
+              con: "赵万庆"
             },
             {
               key: "B",
-              con: "1947年9月"
+              con: "共产党"
             },
             {
               key: "C",
-              con: "1947年9月"
+              con: "人民群众"
             },
             {
               key: "D",
-              con: "1947年9月"
+              con: "苏静"
             }
           ]
         },
         {
-          tit: "3、梁波同志是在什么时间牺牲的?",
+          tit: "3、京西革命史上第一位烈士是？",
           src: require("../assets/s3_3.jpg"),
           que: [
             {
               key: "A",
-              con: "1947年9月"
+              con: "杨思忠"
             },
             {
               key: "B",
-              con: "1947年9月"
+              con: "纪亭榭"
             },
             {
               key: "C",
-              con: "1947年9月"
+              con: "张友恒"
             },
             {
               key: "D",
-              con: "1947年9月"
+              con: "赵万庆"
             }
           ]
         },
         {
-          tit: "4、梁波同志是在什么时间牺牲的?",
-          src: require("../assets/s3_4.jpg"),
+          tit: "3、苏静同志曾在环境恶劣的山洞中坚守了多长时间？",
+          src: require("../assets/s4_3.jpg"),
           que: [
             {
               key: "A",
-              con: "1947年9月"
+              con: "3年"
             },
             {
               key: "B",
-              con: "1947年9月"
+              con: "4年"
             },
             {
               key: "C",
-              con: "1947年9月"
+              con: "5年"
             },
             {
               key: "D",
-              con: "1947年9月"
+              con: "6年"
             }
           ]
         }
@@ -131,40 +131,5 @@ export default {
 </script>
 
 <style scoped lang="less">
-.step {
-  width: 750px;
-  height: 100%;
-  h2 {
-    padding: 120px 30px 120px 30px;
-    font-size: 36px;
-  }
-  p {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 80px;
-    img {
-      width: 588px;
-      height: 400px;
-      border-radius: 20px;
-      border: 20px solid rgba(221, 199, 161, 0.5);
-    }
-  }
-  ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    li {
-      width: 600px;
-      height: 81px;
-      background: url("../assets/btnbg.png") no-repeat 0 0;
-      background-size: 600px 81px;
-      margin-bottom: 15px;
-      font-weight: bold;
-      color: #ede0c9;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  }
-}
+@import "../css/step";
 </style>

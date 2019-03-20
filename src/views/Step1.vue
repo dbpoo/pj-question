@@ -48,7 +48,7 @@ export default {
         },
         {
           tit: "1、救命松救了谁的命?",
-          src: require("../assets/s1_2.jpg"),
+          src: require("../assets/s2_1.jpg"),
           que: [
             {
               key: "A",
@@ -70,7 +70,7 @@ export default {
         },
         {
           tit: "1、梁波同志是平西站的第几任站长？",
-          src: require("../assets/s1_3.jpg"),
+          src: require("../assets/s3_1.jpg"),
           que: [
             {
               key: "A",
@@ -92,7 +92,7 @@ export default {
         },
         {
           tit: "1、请选出与苏静同志事迹最吻合的词语。 ",
-          src: require("../assets/s1_4.jpg"),
+          src: require("../assets/s4_1.jpg"),
           que: [
             {
               key: "A",
@@ -131,40 +131,5 @@ export default {
 </script>
 
 <style scoped lang="less">
-.step {
-  width: 750px;
-  height: 100%;
-  h2 {
-    padding: 120px 30px 120px 30px;
-    font-size: 36px;
-  }
-  p {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 80px;
-    img {
-      width: 588px;
-      height: 400px;
-      border-radius: 20px;
-      border: 20px solid rgba(221, 199, 161, 0.5);
-    }
-  }
-  ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    li {
-      width: 600px;
-      height: 81px;
-      background: url("../assets/btnbg.png") no-repeat 0 0;
-      background-size: 600px 81px;
-      margin-bottom: 15px;
-      color: #ede0c9;
-      display: flex;
-      font-weight: bold;
-      justify-content: center;
-      align-items: center;
-    }
-  }
-}
+@import "../css/step";
 </style>
