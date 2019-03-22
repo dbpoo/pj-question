@@ -91,24 +91,24 @@ export default {
           ]
         },
         {
-          tit: "2、苏静同志是在哪一年被派往妙峰山从事发报工作的？",
-          src: require("../assets/s4_2.jpg"),
+          tit: "2、苏静同志曾在环境恶劣的山洞中坚守了多长时间？",
+          src: require("../assets/s4_3.jpg"),
           que: [
             {
               key: "A",
-              con: "1943年"
+              con: "3年"
             },
             {
               key: "B",
-              con: "1945年"
+              con: "4年"
             },
             {
               key: "C",
-              con: "1949年"
+              con: "5年"
             },
             {
               key: "D",
-              con: "1950年"
+              con: "6年"
             }
           ]
         }

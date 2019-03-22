@@ -91,24 +91,24 @@ export default {
           ]
         },
         {
-          tit: "3、苏静同志曾在环境恶劣的山洞中坚守了多长时间？",
-          src: require("../assets/s4_3.jpg"),
+          tit: "3、请选出与苏静同志事迹最吻合的词语。 ",
+          src: require("../assets/s4_1.jpg"),
           que: [
             {
               key: "A",
-              con: "3年"
+              con: "爱党、敬业、奉献"
             },
             {
               key: "B",
-              con: "4年"
+              con: "隐忍、奉献、守纪"
             },
             {
               key: "C",
-              con: "5年"
+              con: "机智、大局、豪情 "
             },
             {
               key: "D",
-              con: "6年"
+              con: "拥护党、维护党、服务党"
             }
           ]
         }

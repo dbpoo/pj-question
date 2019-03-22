@@ -91,24 +91,24 @@ export default {
           ]
         },
         {
-          tit: "1、请选出与苏静同志事迹最吻合的词语。 ",
-          src: require("../assets/s4_1.jpg"),
+          tit: "1、苏静同志是在哪一年被派往妙峰山从事发报工作的？",
+          src: require("../assets/s4_2.jpg"),
           que: [
             {
               key: "A",
-              con: "爱党、敬业、奉献"
+              con: "1943年"
             },
             {
               key: "B",
-              con: "隐忍、奉献、守纪"
+              con: "1945年"
             },
             {
               key: "C",
-              con: "机智、大局、豪情 "
+              con: "1949年"
             },
             {
               key: "D",
-              con: "拥护党、维护党、服务党"
+              con: "1950年"
             }
           ]
         }
